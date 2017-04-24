@@ -6,7 +6,7 @@
 #
 
 define Profile/SmartLink
- NAME:=ivotten router
+ NAME:=SmartLink iot board
  PACKAGES:=\
 	kmod-fs-exfat kmod-fs-ext4 kmod-fs-hfs kmod-fs-hfsplus kmod-fs-nfs kmod-fs-nfs-common kmod-fs-ntfs \
 	kmod-fs-vfat \
