@@ -11,6 +11,8 @@ define Profile/SmartLink
 	kmod-fs-exfat kmod-fs-ext4 kmod-fs-hfs kmod-fs-hfsplus kmod-fs-nfs kmod-fs-nfs-common kmod-fs-ntfs \
 	kmod-fs-vfat \
 	kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8 \
+	luci luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn \
+	SmartLink-wifi\
 	ip ipset libpolarssl iptables-mod-tproxy \
 	kmod-nfnetlink kmod-ipt-ipset kmod-ipt-tproxy libmnl libpthread
 

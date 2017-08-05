@@ -31,7 +31,7 @@ define Package/SmartLink-wifi
 #SECTION:=ralink
   CATEGORY:=SmartLink SDK
   TITLE:=MT7628/88 SDK  Wifi
-  DEPENDS:=@TARGET_ramips_mt7628  +wireless-tools +libuci
+  DEPENDS:=@TARGET_ramips_mt7628 +uci2dat +ated  +wireless-tools +libuci
   ABI_VERSION:=$(PKG_RELEASE)
 endef
 
