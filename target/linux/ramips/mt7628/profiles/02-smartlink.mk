@@ -12,7 +12,7 @@ define Profile/SmartLink
 	kmod-fs-vfat \
 	kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8 \
 	luci luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn \
-	SmartLink-wifi\
+	SmartLink-wifi luci-mtk-wifi \
 	ip ipset libpolarssl iptables-mod-tproxy \
 	kmod-nfnetlink kmod-ipt-ipset kmod-ipt-tproxy libmnl libpthread
 
