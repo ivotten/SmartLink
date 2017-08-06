@@ -1,4 +1,4 @@
-How to Build a SmartLink firmware
+How to Build a SmartLink firmware in Ubuntu
 
 1. Turn on your ubuntu
 
@@ -28,5 +28,40 @@ How to Build a SmartLink firmware
 	Then Download the relase files and Build your very own firmware:
 		make V=s download  && make V=s  -j 4
 
+
+How to Build a SmartLink firmware in Mac OS 
+1. please go to website https://wiki.openwrt.org/doc/howto/buildroot.exigence.macosx , build up the environment for Mac OS 
+
+2. clone the sourcecode and select the packages you need in menuconfig and build the firmware
+	1) git clone https://github.com/ivotten/SmartLink.git
+	
+	2) cd SmartLink 
+	
+	3) git checkout MacOS
+	
+	4)  ./scripts/feeds update -a && ./scripts/feeds install -a
+	
+	5) make menuconfig
+	
+	 After that, choice the The SmartLink board, Application and driver in bulidroot menu;
+                1)Target System (Ralink RT288x/RT3xxx)  --->
+                2)Subtarget (MT7628 based boards)  --->
+                3)Target Profile (SmartLink iot board)  --->
+                4)LuCI  --->
+                        Collections  --->
+                                <*> luci
+                        Modules  --->
+                                Translations  --->
+                                        <*> Chinese (zh-cn)
+
+                5)exit and save
+
+        Then Download the relase files and Build your very own firmware:
+                make V=s download  && make V=s  -j 4
+
+attention:
+	If you build up the firmware in China , you may need a vpn for download the source. Otherwise, you may fail to clone the source from github.
+
+QQ Group for communication : 436431087 
 
 
